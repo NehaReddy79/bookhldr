@@ -1,0 +1,95 @@
+.navbar-container{
+    display:flex;
+    position: fixed;
+    top:0;
+    right:0;
+    left: 0;
+    align-items: center;
+    background-color: rgb(235, 221, 187);
+    z-index: 1000;
+    height: 80px;
+    padding-right: 10px;
+    
+}
+
+.navbar-logo{
+    margin-right: 15px;
+    margin-left: 20px;
+    cursor: pointer;
+    padding:0;
+    font-family: Playfair Display;
+}
+
+.navbar-logo:active{
+    transform: translateY(-2px) scale(0.95);
+    box-shadow: none;
+}
+
+.navbar-links{
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    gap:10px;
+}
+
+.navbar-button{
+    flex: 1 1 auto;
+    min-width:50px;
+    max-width: 100px;
+    white-space: nowrap;
+    height:40px;
+    padding:0 10px;
+    border-radius: 5px;
+    background-color: rgb(235, 221, 187);
+    border:none;
+    cursor: pointer;
+    font-weight: bold;
+    color:rgb(34, 27, 27);
+    transition: transform 0.3s, ease, box-shadow 0.3s ease;
+     font-size: clamp(12px, 1.2vw, 16px);
+}
+
+.navbar-button:hover{
+    background-color: rgb(200, 180, 150);
+    transform: translateY(-4px) scale(1.05);
+    
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+    color:white
+}
+
+.navbar-button:active{
+    transform: translateY(-2px) scale(0.95);
+    box-shadow: none;
+}
+
+.navbar-username {
+    font-weight: bold;
+    color: rgb(95, 49, 6);
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+    font-size: clamp(12px, 1.2vw, 16px);
+}
+
+.navbar-search {
+    flex: 1;
+    max-width: 300px;
+    height: 35px;
+    border-radius: 20px;
+    border: none;
+    padding: 0 15px;
+    font-size: 14px;
+    background-color: rgb(210, 195, 160);
+    color: rgb(34, 27, 27);
+    margin: 0 15px;
+    outline: none;
+}
+
+.navbar-search:focus {
+    background-color: rgb(220, 205, 170);
+    box-shadow: 0 0 0 2px rgba(95, 49, 6, 0.3);
+}
+
+.navbar-search::placeholder {
+    color: rgb(100, 80, 60);
+}

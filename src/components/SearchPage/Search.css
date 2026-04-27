@@ -1,0 +1,65 @@
+.search-page {
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.search-title {
+    font-family: Playfair Display;
+    color: rgb(95, 49, 6);
+    margin-left: 15px;
+    margin-bottom: 30px;
+}
+
+.search-loading, .search-empty {
+    text-align: center;
+    font-size: 18px;
+    color: #5a3a1a;
+    margin-top: 50px;
+}
+
+.search-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+    padding: 10px 15px;
+}
+
+.search-card {
+    background-color: #75502d;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+    transition: transform 0.3s;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.search-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 20px rgba(0,0,0,0.3);
+}
+
+.search-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.search-book-title {
+    font-weight: bold;
+    color: white;
+    margin: 8px 5px 2px;
+    font-size: 14px;
+    height: 40px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.search-author {
+    color: #f0d9b5;
+    font-size: 12px;
+    margin: 0 5px;
+}

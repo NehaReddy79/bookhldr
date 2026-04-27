@@ -1,0 +1,106 @@
+.mybooks-page {
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.mybooks-title {
+    font-family: Playfair Display;
+    color: rgb(95, 49, 6);
+    margin-left: 15px;
+    margin-bottom: 30px;
+}
+
+.mybooks-loading, .mybooks-empty {
+    text-align: center;
+    font-size: 18px;
+    color: #5a3a1a;
+    margin-top: 50px;
+}
+
+.mybooks-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+    padding: 10px 15px;
+}
+
+.mybooks-card {
+    background-color: #75502d;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+    transition: transform 0.3s;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.mybooks-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 20px rgba(0,0,0,0.3);
+}
+
+.mybooks-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.mybooks-book-title {
+    font-weight: bold;
+    color: white;
+    margin: 8px 5px 2px;
+    font-size: 14px;
+}
+
+.mybooks-author {
+    color: #f0d9b5;
+    font-size: 12px;
+    margin: 0 5px;
+}
+
+.mybooks-status {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: bold;
+    background-color: var(--status-color, rgba(255,255,255,0.2));
+    color: white;
+}
+
+.mybooks-select {
+    margin-top: 8px;
+    width: 90%;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(255,255,255,0.2);
+    color: white;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.mybooks-select option {
+    background-color: #75502d;
+    color: white;
+}
+
+.mybooks-remove-btn {
+    margin-top: 8px;
+    width: 90%;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: #c0392b;
+    color: white;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.mybooks-remove-btn:hover {
+    background-color: #a93226;
+}

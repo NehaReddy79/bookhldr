@@ -1,0 +1,116 @@
+.sign-page{
+    background-image: linear-gradient(to bottom, beige,rgb(165, 104, 42));
+    min-height: 100vh;
+    width:100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sign-image{
+    flex-shrink: 0;
+}
+.sign-des-img{
+    height:600px;
+    width:600px;
+    object-fit: cover;
+    border-radius: 25px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+
+}
+.sign-container{
+    
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(171, 100, 45);
+    margin-left:25px;
+    margin-right: 25px;
+    justify-content: center;
+    /*align-items: center;*/
+    border-radius: 25px;
+
+    gap: 30px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25),
+        0 8px 15px rgba(0, 0, 0, 0.15);;
+
+}
+
+.sign-content{
+    display: flex;
+    flex-direction: column;
+    width:500px;
+    justify-content: center;
+    align-items: center;
+}
+
+h3{
+    text-align: top;
+    margin-bottom: 75px;
+    letter-spacing: 2px;
+    color:white;
+    font-family: Playfair Display;
+}
+
+.sign-text-box, .sign-pass-box{
+    height: 40px;
+    width:250px;
+    margin-bottom: 10px;
+    margin-top: 25px;
+    border-radius: 5px;
+    /* background-color: rgb(130, 71, 26); */
+     background-color: #6F4328;
+    color:white;
+    border: none;
+    padding-left: 25px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.55);
+}
+
+.sign-text-box:focus,
+.sign-pass-box:focus{
+    border-color: #E6D3B1;
+    box-shadow: 0 0 0 2px rgba(230, 211, 177, 0.3);
+}
+
+.sign-text-box:hover , .sign-pass-box:hover{
+    cursor:pointer;
+    
+    
+}
+
+.sign-btn{
+    height: 40px;
+    width:150px;
+    background-color: #C89B6D;
+    border:none;
+    border-radius: 9px;
+    color:white;
+    font-weight: bold;
+    margin-top: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    cursor:pointer;
+}
+
+.sign-btn:hover{
+    background-color: rgb(125, 77, 21);
+    transform: scale(1.05)  translateY(5px);
+}
+
+.sign-btn:active{
+    background-color: rgb(181, 124, 50);
+    transform: translateY(1px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.fade-in{
+    animation: fadeInn 1s forwards;
+    opacity: 0;
+    transform: translateY(-30px);
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeInn {
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
