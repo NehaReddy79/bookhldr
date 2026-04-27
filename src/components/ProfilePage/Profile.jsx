@@ -19,7 +19,7 @@ export function Profile() {
             return;
         }
 
-        fetch('http://localhost:5000/myBooks', {
+        fetch('https://bookhldr-production.up.railway.app/myBooks', {
             headers: { authorization: token }
         })
             .then(res => res.json())

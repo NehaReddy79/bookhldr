@@ -9,7 +9,7 @@ export function Homepagee(){
     const [continueBooks, setContinueBooks] = useState([]);
 
     useEffect(() =>{
-        fetch("http://localhost:5000/books")
+        fetch("https://bookhldr-production.up.railway.app/books")
         .then(res =>res.json())
         .then(data =>{
             setBooks(data);
@@ -19,7 +19,7 @@ export function Homepagee(){
 
         const token = localStorage.getItem('token');
         if (token) {
-            fetch("http://localhost:5000/myBooks", {
+            fetch("https://bookhldr-production.up.railway.app/myBooks", {
                 headers: { authorization: token }
             })
                 .then(res => res.json())

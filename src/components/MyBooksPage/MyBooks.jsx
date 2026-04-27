@@ -14,7 +14,7 @@ export function MyBooks() {
             return;
         }
 
-        fetch('http://localhost:5000/myBooks', {
+        fetch('https://bookhldr-production.up.railway.app/myBooks', {
             headers: { authorization: token }
         })
             .then(res => res.json())
@@ -31,7 +31,7 @@ export function MyBooks() {
     const updateStatus = async (myBookId, newStatus) => {
         const token = localStorage.getItem('token');
         try {
-            const res = await fetch(`http://localhost:5000/myBooks/${myBookId}`, {
+            const res = await fetch(`https://bookhldr-production.up.railway.app/myBooks/${myBookId}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',
@@ -53,7 +53,7 @@ export function MyBooks() {
     const removeBook = async (myBookId) => {
         const token = localStorage.getItem('token');
         try {
-            const res = await fetch(`http://localhost:5000/myBooks/${myBookId}`, {
+            const res = await fetch(`https://bookhldr-production.up.railway.app/myBooks/${myBookId}`, {
                 method: 'DELETE',
                 headers: { authorization: token }
             });

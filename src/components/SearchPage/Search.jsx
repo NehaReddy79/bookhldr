@@ -10,7 +10,7 @@ export function Search() {
 
     useEffect(() => {
         setLoading(true);
-        fetch(`http://localhost:5000/books/search/${query}`)
+        fetch(`https://bookhldr-production.up.railway.app/books/search/${query}`)
             .then(res => res.json())
             .then(data => {
                 setBooks(data);

@@ -9,7 +9,7 @@ export function Category() {
     const navigate = useNavigate();
 
     useEffect(() => {
-        fetch('http://localhost:5000/books')
+        fetch('https://bookhldr-production.up.railway.app/books')
             .then(res => res.json())
             .then(data => {
                 
@@ -40,7 +40,7 @@ export function Category() {
         }
 
         try {
-            const res = await fetch('http://localhost:5000/myBooks', {
+            const res = await fetch('https://bookhldr-production.up.railway.app/myBooks', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

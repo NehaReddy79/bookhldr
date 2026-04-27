@@ -11,7 +11,7 @@ export function BookDetail(){
 
     useEffect(()=>{
 
-        fetch(`http://localhost:5000/books/${id}`)
+        fetch(`https://bookhldr-production.up.railway.app/books/${id}`)
             .then(res => res.json())
             .then(data => {
                 setBook(data);
@@ -34,7 +34,7 @@ export function BookDetail(){
 
         try{
 
-            const res  = await fetch('http://localhost:5000/myBooks',{
+            const res  = await fetch('https://bookhldr-production.up.railway.app/myBooks',{
                 method : 'POST',
                 headers : {
                     'Content-Type' : 'application/json',
